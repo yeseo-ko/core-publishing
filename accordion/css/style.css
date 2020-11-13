@@ -29,7 +29,7 @@ a {
 }
 
 .gallery li {
-  border-right: 5px solid #000;
+  border-right: 3px solid #000;
 
   /* 골고루 너비(width) 값을 나눠 가짐 */
   flex: 1;
@@ -86,13 +86,14 @@ a {
   background-color: #000;
   color: #fff;
   text-align: center;
-  bottom: -250px;
+  bottom: -300px;
   height: 250px;
 
   /* 컨텐츠(검은 박스 영역)도 애니메이션 효과 */
   transition: 0.5s;
 
   padding: 20px;
+  padding-top: 40px;
 
   /* 늘어나는 만큼 늘어나지 않도록 하는 속성 */
   box-sizing: border-box;
@@ -108,4 +109,22 @@ a {
 
   /* 이미지가 커진 다음에 컨텐츠가 올라오도록 transition에 딜레이를 줌 */
   transition-delay: 0.5s;
+}
+
+.content:before {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 80px;
+
+  /* 좌표 설정 */
+  left: 0;
+  top: -10px;
+
+  /* 도형 돌려주기(shorthand) */
+  transform: rotate(-3deg) scale(1.3);
+
+  /* transform-origin: 어디를 기준으로 할 것인지 여부 */
+  transform-origin: left bottom;
 }

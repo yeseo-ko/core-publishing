@@ -83,6 +83,11 @@ a {
   background-color: #000;
   color: #fff;
   text-align: center;
+  bottom: -350px;
+  height: 350px;
+
+  /* 컨텐츠(검은 박스 영역)도 애니메이션 효과 */
+  transition: 0.5s;
 }
 
 .sns a {

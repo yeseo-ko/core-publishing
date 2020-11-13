@@ -56,16 +56,16 @@ a {
 }
 
 .gallery li:nth-child(2) {
-  background: url('../images/hanzo.jpg') no-repeat center/cover;
+  background: url('../images/reaper.jpg') no-repeat center/cover;
 }
 .gallery li:nth-child(3) {
-  background: url('../images/hanzo.jpg') no-repeat center/cover;
+  background: url('../images/McCree.jpg') no-repeat center/cover;
 }
 .gallery li:nth-child(4) {
-  background: url('../images/hanzo.jpg') no-repeat center/cover;
+  background: url('../images/tracer.jpg') no-repeat center/cover;
 }
 .gallery li:nth-child(5) {
-  background: url('../images/hanzo.jpg') no-repeat center/cover;
+  background: url('../images/widowmaker.jpg') no-repeat center/cover;
 }
 
 /* gallery에 마우스가 올라갔을 때 li */
@@ -86,11 +86,16 @@ a {
   background-color: #000;
   color: #fff;
   text-align: center;
-  bottom: -350px;
-  height: 350px;
+  bottom: -250px;
+  height: 250px;
 
   /* 컨텐츠(검은 박스 영역)도 애니메이션 효과 */
   transition: 0.5s;
+
+  padding: 20px;
+
+  /* 늘어나는 만큼 늘어나지 않도록 하는 속성 */
+  box-sizing: border-box;
 }
 
 .sns a {

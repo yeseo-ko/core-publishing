@@ -1,0 +1,34 @@
+/* Google Web Font - Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Font Awesome CDN */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+
+    /* body 기본 margin을 사용하지 않음 */
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    columns: #222;
+}
+
+.gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    /* 세로 배치였던 list가 flex 레이아웃의 기본 배치인 가로(row)로 변경 */
+    flex: 1;
+    height: 100vh;
+}
+
+.gallery li {
+    border-right: 5px solid #000;
+    /* flex: 1; */
+}

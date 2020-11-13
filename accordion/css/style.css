@@ -35,6 +35,7 @@ a {
   flex: 1;
 
   transition: 0.5s;
+  position: relative;
 }
 
 /* 마지막 border-right는 없애기 */

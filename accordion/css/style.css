@@ -96,3 +96,11 @@ a {
 .sns a {
   color: #333;
 }
+
+/* gallery(ul)의 li에 마우스가 올라간다면 그 자식 요소 content를 어떻게 할 것인가 */
+.gallery li:hover .content {
+  bottom: 0;
+
+  /* 이미지가 커진 다음에 컨텐츠가 올라오도록 transition에 딜레이를 줌 */
+  transition-delay: 0.5s;
+}

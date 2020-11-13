@@ -78,6 +78,13 @@ a {
 }
 
 .content {
-    /* content는 자식 요소이므로 absolute */
-    position: absolute;
+  /* content는 자식 요소이므로 absolute */
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.sns a {
+  color: #333;
 }

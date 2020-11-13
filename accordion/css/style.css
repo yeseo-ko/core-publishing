@@ -36,6 +36,9 @@ a {
 
   transition: 0.5s;
   position: relative;
+
+  /* ul 또는 li 기준으로 height 값을 넘어가므로 설정 */
+  overflow: hidden;
 }
 
 /* 마지막 border-right는 없애기 */

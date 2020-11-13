@@ -75,3 +75,8 @@ a {
   flex: 3;
   filter: grayscale(1);
 }
+
+.content {
+    /* content는 자식 요소이므로 absolute */
+    position: absolute;
+}

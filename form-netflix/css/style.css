@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'BMEuljiro10yearslater';
+    src: url('../fonts/BMEuljiro10yearslater.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'BMEuljiro10yearslater', sans-serif;
+    margin: 0;
+}

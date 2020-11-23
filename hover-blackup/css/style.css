@@ -1,0 +1,41 @@
+/* hover, display, position, opacity */
+
+/* Google Web Font - Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.items {
+  border: 3px solid brown;
+  text-align: center;
+}
+.item {
+  /* item 가로 배치 */
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  border: 1px solid darkcyan;
+  /* margin: 10px; */
+}
+img {
+  width: inherit;
+  height: inherit;
+}
+.caption {
+  width: 300px;
+  height: 500px;
+  /* background-color:black; */
+  border: 1px solid royalblue;
+}

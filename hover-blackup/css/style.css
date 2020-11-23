@@ -27,7 +27,8 @@ a {
   width: 300px;
   height: 500px;
   border: 1px solid darkcyan;
-  /* margin: 10px; */
+
+  position: relative;
 }
 img {
   width: inherit;
@@ -38,4 +39,8 @@ img {
   height: 500px;
   /* background-color:black; */
   border: 1px solid royalblue;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }

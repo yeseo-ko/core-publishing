@@ -25,6 +25,12 @@ body {
   position: absolute;
   content: attr(data-text);
   color: gold;
-  width: 30%;
+  width: 0;
   overflow: hidden;
+
+  transition: 0.5s;
+}
+
+.nav li a:hover:before {
+  width: 100%;
 }

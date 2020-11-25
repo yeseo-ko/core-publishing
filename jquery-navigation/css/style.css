@@ -17,4 +17,14 @@ body {
   font-size: 3rem;
   text-decoration: none;
   color: #fff;
+
+  position: relative;
+}
+
+.nav li a:before {
+  position: absolute;
+  content: attr(data-text);
+  color: gold;
+  width: 30%;
+  overflow: hidden;
 }

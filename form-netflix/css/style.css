@@ -1,11 +1,55 @@
 @font-face {
-    font-family: 'BMEuljiro10yearslater';
-    src: url('../fonts/BMEuljiro10yearslater.ttf') format('truetype');
+    font-family: 'pro';
+    src: url('../fonts/BMHANNAPro.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'BMEuljiro10yearslater', sans-serif;
+    font-family: 'pro', sans-serif;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* flex:3; */
+    align-items: center;
+    background-image: url('/form-netflix/images/netflix.jpg');
+    position: relative;
+
+}
+
+h1, h3, h4{
+    color: #fff;
+}
+body::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+.container .search{ 
+    text-align: center;
+}
+
+.search input[type='text']{
+    width: 500px;
+    padding: 20px;
+    border-radius: 40px 0 0 40px;
+    border: none;
+    outline: none;
+}
+.search input[type='submit']{
+    width: 300px;
+    padding: 20px;
+    border-radius:  0 40px 40px 0 ;
+    border: none;
+    background-color:crimson ;
+    color: #FFF;
+    outline: none;
+    font-size:1.875rem;
+}
+.line{
+    display: flex;
 }

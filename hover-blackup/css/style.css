@@ -1,0 +1,65 @@
+/* hover, display, position, opacity */
+
+/* Google Web Font - Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.items {
+  text-align: center;
+}
+.item {
+  /* item 가로 배치 */
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+
+  position: relative;
+  margin: 20px;
+}
+img {
+  width: inherit;
+  height: inherit;
+}
+.caption {
+  width: 300px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-top: 100px;
+
+  /* display: none; 속성은 transition을 줄 수 없음 */
+  opacity: 0;
+  transition: 0.5s;
+}
+.item:hover .caption {
+    opacity: 1;
+}
+.caption a {
+  color: #fff;
+  background-color: chocolate;
+  padding: 10px;
+  border-radius: 5px;
+}
+.caption a:hover {
+  background-color: #fff;
+  color: #000;
+}

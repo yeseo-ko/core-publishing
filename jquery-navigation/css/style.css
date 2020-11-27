@@ -3,7 +3,30 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #000;
+  /* background-color: #000; */
+}
+
+.photo {
+  /* background-color: #ccc; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background: url('../images/coldplay-initial.jpg') no-repeat center center; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url('../images/coldplay-initial.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: 0.5s;
+}
+.photo:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .nav {
@@ -11,6 +34,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
 }
 .nav li {}
 .nav li a {

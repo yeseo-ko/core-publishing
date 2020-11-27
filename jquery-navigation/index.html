@@ -10,11 +10,27 @@
     <div class="conatainer">
       <ul class="nav">
         <!-- data-XXX: 사용자 정의 텍스트 -->
-        <li><a href="#none" data-text="ABOUT">ABOUT</a></li>
-        <li><a href="#none" data-text="EXPERIENCES">EXPERIENCES</a></li>
-        <li><a href="#none" data-text="EDUCATION">EDUCATION</a></li>
-        <li><a href="#none" data-text="CONTACT">CONTACT</a></li>
+        <li data-image="./images/90992.jpg"><a href="#none" data-text="ABOUT">ABOUT</a></li>
+        <li data-image="./images/91009.jpg"><a href="#none" data-text="EXPERIENCES">EXPERIENCES</a></li>
+        <li data-image="./images/91040.jpg"><a href="#none" data-text="EDUCATION">EDUCATION</a></li>
+        <li data-image="./images/91081.jpg"><a href="#none" data-text="CONTACT">CONTACT</a></li>
       </ul>
+      <div class="photo"></div>
     </div>
+    <script src="./script/jquery-3.5.1.js"></script>
+    <script>
+      $('.nav li').mouseenter(function () {
+        var changeImage = $(this).attr('data-image');
+        $('.photo').css({
+          'background-image': 'url(' + changeImage + ')',
+        });
+      });
+      $('.nav li').mouseleave(() => {
+        var changeImage = $(this).attr('data-image');
+        $('.photo').css({
+          'background-image': '',
+        });
+      });
+    </script>
   </body>
 </html>

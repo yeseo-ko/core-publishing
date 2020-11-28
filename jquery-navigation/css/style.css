@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500&display=swap');
+
+
+body{
+    font-family: 'Noto Serif KR', serif;
+    margin: 0;
+    
+    background-color: #000;
+    
+}
+.photo{
+    background:url(../images/1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.photo:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.638);
+}
+.nav{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 3rem;
+    position: relative;
+}
+
+.nav li a:before{
+    content: attr(data-text);
+    color: orange;
+    position: absolute;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav li a:hover:before{
+    width: 100%;
+}
+

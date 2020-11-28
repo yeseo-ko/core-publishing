@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+input[id=trigger]{
+    display: none;
+}
+
+label[for=trigger]{
+    width: 40px;
+    height: 40px;
+    /* border: 1px red solid; */
+    display: block;
+    position: relative;
+
+}
+
+label[for=trigger] span{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    transition: 0.3s;
+}
+label[for=trigger] span:nth-child(1){
+    top:0;
+}
+label[for=trigger] span:nth-child(2){
+    top:50%;
+}
+label[for=trigger] span:nth-child(3){
+    top:100%;
+}
+
+input[id=trigger]:checked + label[for=trigger] span:nth-child(1){
+    transform: rotate(45deg);
+    top:50%;
+}
+input[id=trigger]:checked +label[for=trigger] span:nth-child(2){
+    opacity: 0;
+}
+input[id=trigger]:checked +label[for=trigger] span:nth-child(3){
+    transform: rotate(-45deg);
+    top:50%;
+}

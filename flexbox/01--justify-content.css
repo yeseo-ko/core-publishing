@@ -30,16 +30,16 @@ body{
 
 
 .parent{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction:row;
+    display: flex-start;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* flex-direction:column; */
     height: 100vh;
     border: 3px solid #000;
-    flex-wrap: wrap;
-    align-content: space-around;
-    flex-flow: wrap row;
-    display:inline-flex
+    /* flex-wrap: nowrap; */
+    /* align-content: space-around; */
+    /* flex-flow: wrap row; */
+    /* display:inline-flex */
 }
 
 
@@ -51,4 +51,6 @@ body{
     height:200px;
     text-align: center;
     line-height: 200px; 
+
+    align-self: end;
 }

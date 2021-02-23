@@ -1,0 +1,69 @@
+.pg-bar-wrapper{
+    background: rgb(0, 0, 0);
+    width: 500px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pg-bar-wrapper h1{
+    text-align: center;
+}
+
+.item{
+}
+.item p{
+   /* border: 1px solid rgb(224, 59, 59); */
+   /* 자식요소의 플롯으로 높이값을 잃었기때문에  */
+   overflow: hidden;
+}
+.item p span:first-child{
+    float: left;
+}
+.item p span:last-child{
+    float: right;
+}
+
+.item span{}
+
+.pg-bar{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 20px;
+
+}
+.gage{
+    height: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #472fa7, #f1a9d7);
+
+    animation-name: chart ;
+    animation-duration: 1s ;
+
+    animation-fill-mode: both;
+    /* animation-iteration-count: infinite ; */
+/* 
+    width: 90%; */
+}
+.pg-bar-wrapper .item:nth-of-type(1) .gage{
+    animation-delay: 0s;
+}
+.pg-bar-wrapper .item:nth-of-type(2) .gage{
+    animation-delay: 0.2s;
+}
+.pg-bar-wrapper .item:nth-of-type(3) .gage{
+    animation-delay: 0.4s;
+}
+.pg-bar-wrapper .item:nth-of-type(4) .gage{
+    animation-delay: 0.6s;
+}
+/* 차트 애니메이션 @keyframes 애니메이션 이름 */
+@keyframes chart{
+    0%{
+        width: 0;
+    }
+}
